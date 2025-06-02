@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Search",
+  "version": "1.0",
+  "description": "搜索和管理当前窗口的所有标签页",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "windows",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Search"
+  }
+}
